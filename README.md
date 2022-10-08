@@ -17,3 +17,6 @@ allauth pkj and login an user with google and githu.
   - Reset user password
   - Change user Password
   
+  
+### Change brach to access to chapters
+### This course will be available in [my Aparat chanel](https://www.aparat.com/dip_code)
