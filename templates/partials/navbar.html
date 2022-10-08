@@ -1,0 +1,17 @@
+<div class="navbar bg-light px-3">
+    <div class="nav-brand">
+        Brand
+    </div>
+
+    <div>
+        {% if request.user.is_authenticated %}
+        <!--   if user is authenticated     -->
+        <a href="{% url 'user_account' %}" class="btn btn-link">{{user.username}}</a>
+        <a href="{% url 'logout' %}" class="btn btn-link">logout</a>
+        {% else %}
+        <a href="{% url 'login' %}" class="btn btn-link">Login</a>
+        <a href="{% url 'register_user' %}" class="btn btn-link">Sign up</a>
+        {% endif %}
+
+    </div>
+</div>

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 class="display-1">Login</h1>
+    {% if msg %}
+        <p class="alert alert-danger">{{msg}}</p>
+    {% endif %}
+    <form method="post" class="my-5">
+        {% csrf_token %}
+        {{form.as_p}}
+        <a href="{% url 'password_reset' %}" class="btn btn-link ">forget my password</a>
+        <br>
+        <button type="submit" class="btn btn-info">log in</button>
+    </form>
+
+{% endblock %}
