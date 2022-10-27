@@ -15,7 +15,11 @@ allauth pkj and login an user with google and githu.
   - Log out user
   - Useing Django URLs to login user
   - Reset user password
-  - Change user Password
+  - Change user Passworde 
+- Chapter 2
+  - create custom user model
+  - add custom user to admin
+  - create creationForm and changeForm for custom user
   
   
 ### Change brach to access to chapters
